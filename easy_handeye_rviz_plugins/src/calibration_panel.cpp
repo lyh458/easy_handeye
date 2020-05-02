@@ -4,8 +4,8 @@
 #include <QTimer>
 
 #include "calibration_panel.h"
-//#include </home/marco/ros/catkin_ws/build/easy_handeye_rviz_plugins/easy_handeye_rviz_plugins_autogen/include/ui_calibration_panel.h>  // TODO remove
-#include <ui_calibration_panel.h>
+#include </home/marco/ros/catkin_ws/build/easy_handeye_rviz_plugins/easy_handeye_rviz_plugins_autogen/include/ui_calibration_panel.h>  // TODO remove
+//#include <ui_calibration_panel.h>
 
 namespace easy_handeye_rviz_plugins
 {
@@ -103,6 +103,10 @@ void CalibrationPanel::onSaveCalibrationPressed(bool)
   {
     ROS_DEBUG("Could not compute the calibration");
   }
+}
+
+void CalibrationPanel::onCheckStartingPosePressed(bool) {
+
 }
 
 void CalibrationPanel::setSampleList(const easy_handeye_msgs::SampleList& new_list, int focused_item_index)

@@ -26,6 +26,7 @@ add_library(${PROJECT_NAME}
         src/calibration_panel.cpp
         src/calibration_panel.ui
         src/handeye_client.cpp
+        src/robot_movements_client.h
         )
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${catkin_INCLUDE_DIRS})

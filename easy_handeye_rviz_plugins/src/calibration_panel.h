@@ -26,9 +26,18 @@ public:
 public Q_SLOTS:
 
 protected Q_SLOTS:
+  // sampling
   void onTakeSamplePressed(bool);
   void onRemoveSamplePressed(bool);
+  // calibration
   void onSaveCalibrationPressed(bool);
+  // robot motion
+  void onCheckStartingPosePressed(bool);
+  void onPoseNextPressed(bool);
+  void onPosePreviousPressed(bool);
+  void onHomeAndNextPosePressed(bool);
+  void onPlanPressed(bool);
+  void onMovePressed(bool);
 
 protected:
   void activateCalibration(const std::string& calibrationNamespace);
