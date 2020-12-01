@@ -175,6 +175,8 @@ class HandeyeCalibration(object):
         :rtype: None
         """
         return HandeyeCalibration.from_dict(yaml.load(in_yaml))
+        # return HandeyeCalibration.from_dict(yaml.load(in_yaml, Loader=yaml.FullLoader))
+
 
     @staticmethod
     def init_from_parameter_server(namespace):
